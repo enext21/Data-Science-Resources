@@ -1,0 +1,120 @@
+-------------------------------------------------------------------------------------
+----------Python Virtual Environment Creation in Windows-----------------------------
+-------------------------------------------------------------------------------------
+Microsoft Windows [Version 10.0.19043.1052]
+(c) Microsoft Corporation. All rights reserved.
+
+
+
+Navigate to that Folder/Path though File Explorer
+	ie. F:\Data Science Materials
+	type cmd in address bar 
+
+	$ cmd
+
+If python is installed in your system, then pip comes in handy. 
+(install Python from official site in local machine if not installed)
+and follow these simple steps are:
+
+1) Install virtualenv using
+
+ 	$ pip install virtualenv 
+
+
+2) Now in which ever directory you are, this line below will create a virtualenv there
+
+	virtualenv <Name of Env)
+
+	$ virtualenv Python_Env
+
+And here also you can name it anything.
+
+
+3) Now if you are same directory then type,
+
+	$ Python_Env\Scripts\activate
+
+	You can explicitly specify your path too.
+
+To Activate - F:\Data Science Materials\Python_Env\Scripts>activate
+
+
+4) Similarly like Linux you can deactivate it like
+
+	$ Python_Env\Scripts\deactivate
+
+To Deactivate - (virtual_env1) F:\Data Science Materials\Python_Env\Scripts>deactivate
+
+(Python_Env) F:\Data Science Materials\Python_Env\Scripts>cd..
+
+
+-------------------------------------------------------------------------------------
+----------Installing Data Visualization Libreries--------------------------------------------------
+-------------------------------------------------------------------------------------
+
+---------Pandas Lib Installation--------------
+Open your Jupyter environment ie. (Python_Env) F:\Data Science Materials\Python_Env>
+
+(Python_Env) F:\Data Science Materials\Python_Env\Scripts>pip install pandas
+
+	$ pip install pandas
+
+Collecting pandas
+  Downloading pandas-1.2.4-cp39-cp39-win_amd64.whl (9.3 MB)
+     |████████████████████████████████| 9.3 MB 819 kB/s
+Successfully installed numpy-1.20.3 pandas-1.2.4 python-dateutil-2.8.1 pytz-2021.1 six-1.16.0
+
+
+WARNING: You are using pip version 21.1.1; however, version 21.1.2 is available.
+You should consider upgrading via the 'f:\virtual_env\virtual_env1\scripts\python.exe -m pip install --upgrade pip' command.
+
+(Python_Env) F:\Data Science Materials\Python_Env\Scripts>python.exe -m pip install --upgrade pip
+
+	$ python.exe -m pip install --upgrade pip
+
+Requirement already satisfied: pip in f:\virtual_env\virtual_env1\lib\site-packages (21.1.1)
+Collecting pip
+  Downloading pip-21.1.2-py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 1.1 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.1.1
+    Uninstalling pip-21.1.1:
+      Successfully uninstalled pip-21.1.1
+Successfully installed pip-21.1.2
+
+---------Matplot Lib Installation--------------
+Open your Jupyter environment ie. (Python_Env) F:\Data Science Materials\Python_Env>
+
+	$ pip install matplotlib
+
+
+-------------------------------------------------------------------------------------
+----------Add Password in Jupyter Log in Window--------------------------------------
+-------------------------------------------------------------------------------------
+Open your Jupyter environment ie. (Python_Env) F:\Data Science Materials\Python_Env>
+
+	$ jupyter notebook password
+
+-------------------------------------------------------------------------------------
+----------Remove Password from Log in Window-----------------------------------------
+-------------------------------------------------------------------------------------
+Open your Jupyter environment ie. (Python_Env) F:\Data Science Materials\Python_Env>
+
+	$ jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password=''
+	$ jupyter lab --ip='*' --LabServerApp.token='' --LabServerApp.password=''
+
+
+
+-------------------------------------------------------------------------------------
+----------Launch Jupyter Lab/Notebook------------------------------------------------
+-------------------------------------------------------------------------------------
+Open your Jupyter environment ie. (Python_Env) F:\Data Science Materials\Python_Env>
+
+	$ jupyter notebook
+		or
+	$ jupyter lab
+		
+
+
+
