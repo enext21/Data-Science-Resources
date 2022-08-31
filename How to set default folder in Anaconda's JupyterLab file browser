@@ -1,0 +1,28 @@
+---------------Jupyter Lab ---------------------
+1. Open Conda(Promt) or cmd
+
+	$ jupyter lab --generate-config
+
+. jupyter_lab_config.py should be created in dir /home/$USER/.jupyter directory.
+
+
+2. Open in any Editor
+
+search for	-	# c.NotebookApp.notebook_dir = 'F:/Data Science Materials/Python_Env/'		arround row no 393(may varry)
+
+3. add your desired path and uncomments it 
+
+like this 	-	c.NotebookApp.notebook_dir = 'C:/Users/h493620/Downloads/Data_Science/Work_Book/' 
+
+
+---------------Jupyter Notebook---------------------
+
+	$ c.ServerApp.root_dir
+
+	$ jupyter server --generate-config
+
+	$ jupyter notebook --notebook-dir='F:/Data Science Materials/Python_Env/'
+	$ jupyter notebook --notebook-dir="D:/"
+
+
+F:\Data Science Materials\Python_Env\
